@@ -12,7 +12,6 @@ const meowingCode = {
     Y: 'K', Z: 'L'
 };
 
-// Menambahkan kode ZOLA
 const zolaCode = {
     A: 'Z', B: 'A', C: 'B', D: 'C', E: 'D', F: 'E', G: 'F', H: 'G',
     I: 'H', J: 'I', K: 'J', L: 'K', M: 'L', N: 'M', O: 'N', P: 'O',
@@ -20,7 +19,6 @@ const zolaCode = {
     Y: 'X', Z: 'Y'
 };
 
-// Menambahkan kode GUDUT
 const gudutCode = {
     A: 'G', B: 'H', C: 'I', D: 'J', E: 'K', F: 'L', G: 'M', H: 'N',
     I: 'O', J: 'P', K: 'Q', L: 'R', M: 'S', N: 'T', O: 'U', P: 'V',
