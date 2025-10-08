@@ -12,17 +12,45 @@ const meowingCode = {
     Y: 'K', Z: 'L'
 };
 
+// Menambahkan kode ZOLA
+const zolaCode = {
+    A: 'Z', B: 'A', C: 'B', D: 'C', E: 'D', F: 'E', G: 'F', H: 'G',
+    I: 'H', J: 'I', K: 'J', L: 'K', M: 'L', N: 'M', O: 'N', P: 'O',
+    Q: 'P', R: 'Q', S: 'R', T: 'S', U: 'T', V: 'U', W: 'V', X: 'W',
+    Y: 'X', Z: 'Y'
+};
+
+// Menambahkan kode GUDUT
+const gudutCode = {
+    A: 'G', B: 'H', C: 'I', D: 'J', E: 'K', F: 'L', G: 'M', H: 'N',
+    I: 'O', J: 'P', K: 'Q', L: 'R', M: 'S', N: 'T', O: 'U', P: 'V',
+    Q: 'W', R: 'X', S: 'Y', T: 'Z', U: 'A', V: 'B', W: 'C', X: 'D',
+    Y: 'E', Z: 'F'
+};
+
 function translateText() {
     const inputText = document.getElementById('inputText').value.toUpperCase();
     const kodeSelect = document.getElementById('kodeSelect').value;
-    let code = kodeSelect === 'FUBAR' ? fubarCode : meowingCode;
+    let code = {};
+
+    // Menentukan kode yang dipilih oleh user
+    if (kodeSelect === 'FUBAR') {
+        code = fubarCode;
+    } else if (kodeSelect === 'MEOWING') {
+        code = meowingCode;
+    } else if (kodeSelect === 'ZOLA') {
+        code = zolaCode;
+    } else if (kodeSelect === 'GUDUT') {
+        code = gudutCode;
+    }
+
     let translatedText = '';
 
     for (let char of inputText) {
         if (code[char]) {
             translatedText += code[char];
         } else {
-            translatedText += char; // If the character is not in the alphabet, keep it unchanged
+            translatedText += char; // Jika bukan huruf, biarkan tetap
         }
     }
 
