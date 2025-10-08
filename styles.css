@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+select, textarea, button {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 400px;
+}
+
+textarea {
+    height: 150px;
+}
+
+button {
+    cursor: pointer;
+}
+
+h2 {
+    margin-top: 20px;
+}
